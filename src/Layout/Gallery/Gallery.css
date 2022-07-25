@@ -1,0 +1,13 @@
+.gallery{
+	position: absolute;
+	top: 0;
+	right: 20px;
+	height: 100vh;
+}
+
+.gallery__info{
+	margin-top: 20px;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+
+}

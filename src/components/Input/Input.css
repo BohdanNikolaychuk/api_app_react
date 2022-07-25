@@ -1,0 +1,59 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.input {
+	display: flex;
+}
+
+form {
+	padding-top: 30px;
+
+	position: relative;
+}
+
+.inputText {
+	outline: none;
+	border: none;
+	width: 470px;
+	height: 60px;
+	background: #FFFFFF;
+	border-radius: 20px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	color: #8C8C8C;
+	padding: 20px;
+}
+
+.btn {
+	position: absolute;
+	top: 38px;
+	right: 10px;
+	z-index: 9;
+	outline: none;
+	display: inline-block;
+	background: #FBE0DC;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttons>button {
+	width: 60px;
+	height: 60px;
+	border: none;
+	background: #FFFFFF;
+	border-radius: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.buttons {
+	padding-top: 30px;
+}

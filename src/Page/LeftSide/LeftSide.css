@@ -1,24 +1,21 @@
-
-.cards{
-	display: flex;
-	
+.cards {
+  display: flex;
 }
 
-.LeftSide{
-	margin-left: 10%;
-	padding-top: 30px;
+.LeftSide {
+  margin-left: 10%;
+  padding-top: 30px;
 }
 
+.LeftSide > h1 {
+  margin-top: 80px;
 
-.LeftSide > h1{
-	margin-top: 80px;
-	font-weight: 500;
-	font-size: 44px;
-	line-height: 58px;
-	color: #1D1D1D;
-	margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 58px;
+  color: #1d1d1d;
+  margin-bottom: 120px;
 }
 
-.LeftSide > p{
-	margin-bottom: 60px;
+.LeftSide > p {
+  margin-bottom: 60px;
 }

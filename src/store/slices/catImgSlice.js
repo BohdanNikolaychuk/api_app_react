@@ -53,7 +53,7 @@ export const filterSlice = createSlice({
     },
     [axiosGetImg.rejected]: (state, action) => {},
     [axiosVoting.pending]: (state) => {
-      state.status = 'loading1';
+      state.status = 'loading';
       state.error = null;
     },
     [axiosVoting.fulfilled]: (state, action) => {

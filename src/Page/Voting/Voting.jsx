@@ -17,13 +17,12 @@ import '../Voting/Voting.css';
 import { axiosGetImg, axiosVoting } from '../../store/slices/catImgSlice';
 import { useSelector, useDispatch } from 'react-redux';
 const Voting = () => {
-  const API = '3b937f44-90cd-4180-8a25-aced6a07e5fc';
-  axios.defaults.headers.common['x-api-key'] = API;
+  axios.defaults.headers.common['x-api-key'] = '3b937f44-90cd-4180-8a25-aced6a07e5fc';
+
   //reduxtoolkit
   const dispatch = useDispatch();
   const { imgURL, status, voting } = useSelector((state) => state.catImgSlice);
-  console.log(imgURL);
-  console.log(status);
+
   React.useEffect(() => {
     const load = async () => {
       await dispatch(axiosGetImg());
@@ -99,7 +98,7 @@ const Voting = () => {
       <Input />
       <div className="voting__info">
         <div className="main__btns">
-          <Link to={{ pathname: '/' }} className="arrow__btn">
+          <Link to={'/'} className="arrow__btn">
             <Arrow fill="white" />
           </Link>
           <button className="voting__btn">Voting</button>
@@ -132,7 +131,7 @@ const Voting = () => {
             <Bored fill="white" />
           </div>
         </div>
-        {status === 'loading1' ? (
+        {status === 'loading' ? (
           <Loader type="spin" color="#FBE0DC" height="30px" width="30px" />
         ) : (
           <div className="show__panels">

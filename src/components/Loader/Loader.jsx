@@ -4,7 +4,7 @@ const Loader = (props) => {
   const { type, color, height, width } = props;
   //FBE0DC
   //spin
-  console.log(type);
+
   return (
     <div
       style={{
